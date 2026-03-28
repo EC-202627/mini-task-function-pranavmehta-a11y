@@ -7,12 +7,9 @@ def calculate_fine(book_title, days_overdue, daily_rate, max_fine=150.0):
     return float(fine)
 
 
-user_input = input()
-parts = user_input.split()
-
-title = " ".join(parts[:-2])
-days = int(parts[-2])
-rate = float(parts[-1])
+title = input()
+days = int(input())
+rate = float(input())
 
 result = calculate_fine(title, days, rate)
 
