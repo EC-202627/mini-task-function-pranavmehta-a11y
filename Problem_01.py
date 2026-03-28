@@ -12,7 +12,7 @@ days = int(input())
 
 result = calculate_fine(title, days)
 
-print(f"Book: {title}, Days overdue: {days}, Fine: Rs. {result}")
+print("Book:", title, "Days overdue:", days, "Fine: Rs.", result)
 
 if result >= 150.0:
     print("You have accumulated the maximum fine of INR: 150.0")
