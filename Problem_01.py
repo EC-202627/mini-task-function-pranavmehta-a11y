@@ -6,13 +6,8 @@ def calculate_fine(book_title, days_overdue, daily_rate=5.0, max_fine=150.0):
         
     return float(fine)
 
-user_input = input()
-
-last_space_index = user_input.rfind(" ")
-
-title = user_input[:last_space_index]
-days_str = user_input[last_space_index + 1:]
-days = int(days_str)
+title = input()
+days = int(input())
 
 result = calculate_fine(title, days)
 
